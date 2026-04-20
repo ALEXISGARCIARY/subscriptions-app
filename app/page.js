@@ -13,10 +13,11 @@ export default function Home() {
   const [subs, setSubs] = useState([]);
   const [showForm, setShowForm] = useState(false);
   const [form, setForm] = useState({
-    name: "",
-    price: "",
-    category: "Entretenimiento",
-  });
+  name: "",
+  price: "",
+  category: "Entretenimiento",
+  image: ""
+});
 
   useEffect(() => {
     const data = JSON.parse(localStorage.getItem("subscriptions") || "[]");
